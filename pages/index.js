@@ -1,18 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../src/components/footer'
 
 const Home = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Data Fetching Examples</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+      <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
         <h1 className="text-6xl font-bold">Data Fetching Examples</h1>
-        <div className="my-6 flex border-b-8 border-solid border-inherit py-3">
+        <div className="flex py-3 my-6 border-b-8 border-solid border-inherit">
           <p className="pr-4">
             <Link href="/breakingbad">
               <a>
@@ -36,12 +37,9 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full"></div>
+        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full"></div>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <p>An Experimental Project by John William Davis</p>
-      </footer>
+      <Footer />
     </div>
   )
 }
