@@ -14,21 +14,21 @@ const Home = () => {
       <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
         <h1 className="text-6xl font-bold">Data Fetching Examples</h1>
         <div className="flex py-3 my-6 border-b-8 border-solid border-inherit">
-          <p className="pr-4">
+          <p className="pr-4 hover:text-blue-400">
             <Link href="/breakingbad">
               <a>
                 <code>getStaticProps</code>
               </a>
             </Link>
           </p>
-          <p className="pr-4">
+          <p className="pr-4 hover:text-blue-400">
             <Link href="/thewalkingdead">
               <a>
                 <code>getServerSideProps</code>
               </a>
             </Link>
           </p>
-          <p>
+          <p className="hover:text-blue-400">
             <Link href="/giphy">
               <a>
                 <code>useEffect</code>
