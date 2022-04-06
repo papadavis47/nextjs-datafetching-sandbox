@@ -6,7 +6,9 @@ const Trending = ({ movies }) => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-blue-200">
       <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
-        <h1 className="my-6 text-3xl">The Movie Database APIv3</h1>
+        <h1 className="my-6 text-3xl">
+          The Movie Database API<span className="text-xs">v3</span>
+        </h1>
         <div className=" p-none">
           <Link href="/">
             <a className="inline-flex items-center">
@@ -52,7 +54,7 @@ export default Trending
 
 export async function getServerSideProps(context) {
   const movies = await fetch(
-    `https://api.themoviedb.org/3/trending/day/week?api_key=${process.env.TMDB_API_KEY}`
+    `https://api.themoviedb.org/3/trending/movie/day?api_key=${process.env.TMDB_API_KEY}`
   ).then((data) => data.json())
   // or I can do it like the following:
 

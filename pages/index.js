@@ -31,7 +31,7 @@ const Home = () => {
             </Link>
           </p>
           <p className="my-2 border-b-4 border-solid border-inherit hover:text-blue-400 md:border-none md:pr-4">
-            <Link href="#">
+            <Link href="/paths">
               <a>
                 <code>getStaticPaths</code>
               </a>
