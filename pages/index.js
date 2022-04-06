@@ -5,15 +5,15 @@ import Footer from '../src/components/footer'
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>Data Fetching Examples</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">Data Fetching Examples</h1>
-        <div className="flex py-3 my-6 border-b-8 border-solid border-inherit">
+        <div className="my-6 flex border-b-8 border-solid border-inherit py-3">
           <p className="pr-4 hover:text-blue-400">
             <Link href="/breakingbad">
               <a>
@@ -22,7 +22,7 @@ const Home = () => {
             </Link>
           </p>
           <p className="pr-4 hover:text-blue-400">
-            <Link href="/thewalkingdead">
+            <Link href="/trending">
               <a>
                 <code>getServerSideProps</code>
               </a>
@@ -37,7 +37,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full"></div>
+        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full"></div>
       </main>
       <Footer />
     </div>

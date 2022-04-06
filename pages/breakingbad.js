@@ -1,7 +1,7 @@
 const BreakingBad = ({ data }) => {
   return (
     <div className="flex flex-col items-center min-h-screen py-2 bg-slate-500">
-      <h1 className="my-6 text-3xl italic">
+      <h1 className="my-6 text-xl italic md:text-2xl lg:text-3xl">
         Here I am using the Breaking Bad REST API
       </h1>
       <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
@@ -22,7 +22,6 @@ const BreakingBad = ({ data }) => {
                       <img
                         src={img}
                         alt={name}
-                        layout="responsive"
                         className="mx-auto text-align"
                       />
                     </div>
