@@ -1,9 +1,20 @@
+import { FiArrowLeft } from 'react-icons/fi'
+import Link from 'next/link'
 const BreakingBad = ({ data }) => {
   return (
     <div className="flex flex-col items-center min-h-screen py-2 bg-slate-500">
       <h1 className="my-6 text-xl italic md:text-2xl lg:text-3xl">
-        Here I am using the Breaking Bad REST API
+        Breaking Bad REST API
       </h1>
+      <div className=" p-none">
+        <Link href="/">
+          <a className="inline-flex items-center">
+            <FiArrowLeft />
+            <p className="pl-4 ">Go Back to Home </p>
+          </a>
+        </Link>
+      </div>
+
       <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
         <div>
           <p className="my-6 text-2xl underline">getStaticProps</p>
@@ -22,7 +33,7 @@ const BreakingBad = ({ data }) => {
                       <img
                         src={img}
                         alt={name}
-                        className="mx-auto text-align"
+                        className="mx-auto rounded-sm text-align"
                       />
                     </div>
                     <h3 className="my-4">

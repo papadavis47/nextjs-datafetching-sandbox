@@ -1,9 +1,20 @@
+import Link from 'next/link'
+import { FiArrowLeft } from 'react-icons/fi'
+
 const Trending = ({ movies }) => {
   const imageBaseUrl = 'https://image.tmdb.org/t/p/w500'
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-blue-200">
       <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
-        <h1 className="my-6 text-3xl">Here, I am using the TMDB API</h1>
+        <h1 className="my-6 text-3xl">The Movie Database APIv3</h1>
+        <div className=" p-none">
+          <Link href="/">
+            <a className="inline-flex items-center">
+              <FiArrowLeft />
+              <p className="pl-4 ">Go Back to Home </p>
+            </a>
+          </Link>
+        </div>
         <div className="container flex flex-col items-center text-center">
           {/* <pre>{JSON.stringify(movies, null, 2)}</pre> */}
           {movies.results.map((movie) => {
@@ -41,7 +52,7 @@ export default Trending
 
 export async function getServerSideProps(context) {
   const movies = await fetch(
-    `https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.TMDB_API_KEY}`
+    `https://api.themoviedb.org/3/trending/day/week?api_key=${process.env.TMDB_API_KEY}`
   ).then((data) => data.json())
   // or I can do it like the following:
 
