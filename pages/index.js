@@ -17,7 +17,7 @@ const Home = () => {
         </h1>
         <div className="flex flex-col py-3 my-6 border-inherit md:flex-row md:border-b-8 md:border-solid">
           <p className="my-2 border-b-4 border-solid border-inherit hover:text-blue-400 md:border-none md:pr-4">
-            <Link href="/breakingbad">
+            <Link href="/bbcharacters">
               <a>
                 <code>getStaticProps</code>
               </a>
@@ -31,7 +31,7 @@ const Home = () => {
             </Link>
           </p>
           <p className="my-2 border-b-4 border-solid border-inherit hover:text-blue-400 md:border-none md:pr-4">
-            <Link href="/paths">
+            <Link href="/movies">
               <a>
                 <code>getStaticPaths</code>
               </a>
