@@ -37,6 +37,13 @@ const Home = () => {
               </a>
             </Link>
           </p>
+          <p className="my-2 border-b-4 border-solid border-inherit hover:text-blue-400 md:border-none md:pr-4">
+            <Link href="/thewalkingdead">
+              <a>
+                <code>SSR-With Paths</code>
+              </a>
+            </Link>
+          </p>
           <p className="my-2 border-b-4 border-solid border-inherit hover:text-blue-400 md:border-none">
             <Link href="/giphy">
               <a>
