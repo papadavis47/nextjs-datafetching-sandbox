@@ -38,7 +38,7 @@ const BreakingBadCharacters = ({ data }) => {
                     className="py-4 my-6 border-b border-slate-300"
                   >
                     <h2 className="mb-4 text-2xl font-bold hover:text-white">
-                      <Link href={`/bbcharacters/${char_id}`}>
+                      <Link href={`/breakingbad/characters/${char_id}`}>
                         <a>{name}</a>
                       </Link>
                     </h2>
